@@ -33,9 +33,9 @@
 
 <nav class="navbar">
     <div class="brand">
-        <img src="assets/logo-hospital.png" style="width: 50px;" alt="Logo Hospital">
+        <img src="Activos/logo-hospital.png" style="width: 50px;" alt="Logo Hospital">
         <div><h1>Hospital Militar "Dr. Manuel Siverio Castillo"</h1><p style="font-size: 0.8rem;">Dirección de Salud de la F.A.N.B.</p></div>
-        <img src="assets/logo-fanb.png" style="width: 50px;" alt="Logo FANB">
+        <img src="Activos/logo-fanb.png" style="width: 50px;" alt="Logo FANB">
     </div>
     <ul class="nav-links">
         <li><a onclick="showGallery()">Nuestros Directores</a></li>
@@ -52,7 +52,6 @@
 <main class="container">
     <section>
         <h2>Nuestra Historia</h2>
-        <img src="assets/dr-siverio.jpg" style="float: right; width: 300px; margin-left: 20px; border-radius: 8px;" alt="Dr. Siverio">
         <p>El Hospital Militar Dr. Manuel Siverio Castillo, de Puerto Ordaz, responde a los planes de expansión de la red sanitaria de la Fuerza Armada Nacional, contemplados en el plan global 2000-2010...</p>
     </section>
 </main>
@@ -67,12 +66,12 @@
         {name:"González Busto", img:"dir3.jpg"}, {name:"Moreno Frasser", img:"dir4.jpg"},
         {name:"Campos Lozada", img:"dir5.jpg"}, {name:"Gómez Barreto", img:"dir6.jpg"},
         {name:"Yepez Pérez", img:"dir7.jpg"}, {name:"Hernández Díaz", img:"dir8.jpg"},
-        {name:"Quintana Isturiz", img:"dir9.jpg"}, {name:"Director Actual", img:"dir10.jpg"}
+        {name:"Quintana Isturiz", img:"dir9.jpg"}
     ];
     
     const container = document.getElementById('galleryContent');
     directors.forEach(d => {
-        container.innerHTML += `<div><img src="assets/${d.img}" style="width:100px; border-radius:50%;"><p>${d.name}</p></div>`;
+        container.innerHTML += `<div><img src="Activos/${d.img}" style="width:100px; height:100px; object-fit:cover; border-radius:50%;"><p style="font-size: 12px; margin-top: 5px;">${d.name}</p></div>`;
     });
 
     function showGallery() { document.getElementById('directorModal').style.display = 'flex'; }
